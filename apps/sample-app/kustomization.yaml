@@ -1,0 +1,6 @@
+resources:
+  - pre-deploy-job.yaml
+  - deployment.yaml
+  - service.yaml
+  - post-deploy-job.yaml
+

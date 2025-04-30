@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: pre-deploy-check
+spec:
+  template:
+    spec:
+      containers:
+        - name: check
+          image: busybox
+          command: ["sh", "-c", "echo Pre-deployment check passed!"]
+      restartPolicy: Never
+
